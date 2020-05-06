@@ -24,17 +24,45 @@ body {
     background-repeat: no-repeat;
 }
 
-h1 {
-    display: table;
-    margin: 5% auto 0;
-    text-transform: uppercase;
-    font-family: 'Times Roman', sans-serif;
-    font-size: 3em;
-    font-weight: 400;
-    color: violet;
-    text-shadow: 0 1px violet, 0 1px black
-}
+/*HEADER*/
+h1 { 
+    font-size: 7rem;
+    line-height: 1;
+    font-family: "Arial black";
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 2px;
+  }
+  
+  .animation-container {
+    background: linear-gradient(-45deg, violet 25%, pink 25%, pink 50%, violet 50%, violet 75%, pink 75%, pink);
+    background-size: 40px 40px;
+    background-position: 0 0;
+    -webkit-background-clip: text;
+    animation: stripe-pattern 1s linear infinite;
+  }
+  
+  .text-with-animated-background {
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+  @keyframes stripe-pattern {
+      100% {
+          background-position: 40px 0, 40px 0, 40px 0;
+      }
+  }
+  
 
+  
+  h1 {
+
+  font-family: 'Bungee Shade', cursive;
+
+    font-weight: 100;
+  }
+/*GALLERY*/
 .container {
     margin: 4% auto;
     width: 210px;
